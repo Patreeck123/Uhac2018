@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marygraceangeles.myapplication.Signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP FORM"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/dogdroidf"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:id="@+id/editTextID"
+        android:background="@android:color/transparent"
+        android:padding="12dp"
+        android:drawablePadding="12dp"
+        android:hint="ID Number"
+        android:textColorHint="#fff"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:id="@+id/editTextaccnumber"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:hint="Account Number"
+        android:textColorHint="#fff"
+        android:background="@android:color/transparent"
+        android:maxLines="1"
+        android:layout_marginTop="4dp"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextcontact"
+            android:drawablePadding="16dp"
+            android:padding="16dp"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextAddress"
+            android:drawablePadding="16dp"
+            android:padding="16dp"
+            android:hint="Address"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:id="@+id/editTextPassword"
+            android:drawablePadding="16dp"
+            android:padding="16dp"
+            android:hint="Password"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:id="@+id/editTextConPassword"
+            android:drawablePadding="16dp"
+            android:padding="16dp"
+            android:hint="Confirm Password"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:id="@+id/editTextPincode"
+            android:drawablePadding="16dp"
+            android:padding="16dp"
+            android:hint="Pincode"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="SUBMIT"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:textColor="#f16f71"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f08b98"
+        android:text="CANCEL"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
