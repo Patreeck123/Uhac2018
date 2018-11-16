@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marygraceangeles.myapplication.Dietary">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Name"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:id="@+id/Pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Pet Name"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Gender:"
+        android:layout_below="@+id/Pname"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Gender"
+        android:layout_marginStart="11dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breed:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/breed"
+        android:layout_alignBottom="@+id/breed"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/breed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Dog Breed"
+        android:layout_below="@+id/gen"
+        android:layout_alignStart="@+id/gen" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Morning Diet Food:"
+        android:layout_below="@+id/breed"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/Mdiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Food No. 1"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Afternoon Diet Food:"
+        android:layout_alignBaseline="@+id/Adiet"
+        android:layout_alignBottom="@+id/Adiet"
+        android:layout_alignStart="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/Adiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Food No. 2"
+        android:layout_below="@+id/Mdiet"
+        android:layout_alignStart="@+id/Mdiet" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Evening Diet Food:"
+        android:layout_alignBaseline="@+id/Ediet"
+        android:layout_alignBottom="@+id/Ediet"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/Ediet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Adiet"
+        android:layout_below="@+id/Adiet"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Food No. 3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Ediet"
+        android:layout_marginBottom="67dp"
+        android:text="SAVE"
+        android:onClick="reg"/>
+
+
+</RelativeLayout>

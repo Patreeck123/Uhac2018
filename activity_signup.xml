@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword"
+            android:inputType="numberPassword"
             android:id="@+id/p3"
             android:drawablePadding="16dp"
             android:padding="16dp"

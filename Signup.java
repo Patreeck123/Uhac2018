@@ -58,9 +58,7 @@ public class Signup extends AppCompatActivity {
                     if (uh6.getText().toString().equals(uh7.getText().toString())) {
 
                         register();
-                        Intent i = new Intent(Signup.this,Dogsform.class);
-                        startActivity(i);
-                        finish();
+
                     } else {
                         Toast.makeText(Signup.this, "Check your password and confirm password", Toast.LENGTH_SHORT).show();
                     }
@@ -93,7 +91,10 @@ public class Signup extends AppCompatActivity {
                         }
                         else
                         {
-                            Toast.makeText(Signup.this,"Register Success",Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(Signup.this,Dogsform.class);
+                            i.putExtra("hidden",uh1.getText().toString());
+                            startActivity(i);
+                            finish();
                         }
                     }
                 }, new Response.ErrorListener() {

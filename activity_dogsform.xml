@@ -87,6 +87,7 @@
                 android:textSize="18sp"
                 android:textColor="#f16f71"
                 android:padding="16dp"
+                android:onClick="reg"
                 android:layout_marginTop="32dp"/>
 
             <Button

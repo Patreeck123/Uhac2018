@@ -90,6 +90,10 @@ u1=(EditText)findViewById(R.id.editTextID);
                         else if(response.contains("2"))
                         {
                             Toast.makeText(Login.this,"Success Log in",Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(Login.this,mainmenu.class);
+                            i.putExtra("hidden2",u1.getText().toString());
+                            startActivity(i);
+                            finish();
                         }
 
                     }

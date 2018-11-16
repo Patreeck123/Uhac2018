@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="com.example.marygraceangeles.myapplication.mainmenu">
+
+
+
+
+            <Button
+
+                android:id="@+id/diet"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:background="@mipmap/ic_launcherdiet"
+                android:onClick="diet" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="220dp"
+                android:text="DIETARY"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:id="@+id/textView8" />
+
+            <Button
+
+                android:id="@+id/vitamins"
+                android:onClick="vitamins"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="200dp"
+                android:background="@mipmap/ic_launcherfood"
+                android:layout_marginTop="65dp"
+                android:layout_alignParentEnd="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCESSORIES"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:id="@+id/textView10"
+                android:layout_below="@+id/accecories"
+                android:layout_alignEnd="@+id/accecories" />
+            <Button
+
+                android:id="@+id/accecories"
+                android:onClick="accessories"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@mipmap/ic_launcherbag"
+                android:layout_below="@+id/textView8"
+                android:layout_alignStart="@+id/diet" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:text="VITAMINS"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:layout_below="@+id/vitamins"
+                android:layout_alignStart="@+id/vitamins"
+                android:layout_marginStart="15dp" />
+
+
+        </RelativeLayout>
+
+
+
